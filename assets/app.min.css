@@ -71,7 +71,7 @@
  */
 .ui-widget {
 	font-family: Verdana, Arial, sans-serif;
-	font-size: .8em
+	font-size: 1em
 }
 .ui-widget .ui-widget {
 	font-size: 1em
@@ -1491,7 +1491,7 @@ input, input[type="password"], input[type="search"], isindex, textarea {
 	border-top: solid 4px #ff9c08;
 	border-bottom: solid 2px #D9d8CE;
 	display: inline-block;
-	height: 54px;
+	height: 90px;
 	width: 100%
 }
 .toolbar-upper {
@@ -1546,7 +1546,7 @@ input, input[type="password"], input[type="search"], isindex, textarea {
 	display: inline-block;
 	color: #fff;
 	font-family: arial;
-	font-size: .8em;
+	font-size: 1em;
 	font-weight: 700;
 	padding: 0 14px;
 	text-decoration: none;
@@ -1690,9 +1690,23 @@ textarea {
 	background: #FFF!important
 }
 .ee100 {
+	background: #fff;
 	color: #000;
 	font-family: Arial, sans-serif;
-	font-size: 12.00pt;
+	font-size: 20.00pt;
+	font-style: normal;
+	font-weight: 400;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	text-align: left;
+	vertical-align: bottom
+}
+.ee103 {
+	background: #fff;
+	color: #000;
+	font-family: Arial, sans-serif;
+	font-size: 18.00pt;
 	font-style: normal;
 	font-weight: 400;
 	padding-left: 1px;
@@ -1702,19 +1716,6 @@ textarea {
 	vertical-align: bottom
 }
 .ee106 {
-	background: #8DB4E2;
-	color: #000;
-	font-family: Arial, sans-serif;
-	font-size: 12.00pt;
-	font-style: normal;
-	font-weight: 700;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	text-align: center;
-	vertical-align: bottom
-}
-.ee109 {
 	background: #fff;
 	color: #000;
 	font-family: Arial, sans-serif;
@@ -1727,11 +1728,24 @@ textarea {
 	text-align: left;
 	vertical-align: bottom
 }
-.ee111 {
+.ee109 {
+	background: #8DB4E2;
+	color: #000;
+	font-family: Arial, sans-serif;
+	font-size: 20.00pt;
+	font-style: normal;
+	font-weight: 700;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	text-align: center;
+	vertical-align: bottom
+}
+.ee112 {
 	background: #DCE6F1;
 	color: #000;
 	font-family: Calibri, sans-serif;
-	font-size: 12.00pt;
+	font-size: 20.00pt;
 	font-style: normal;
 	font-weight: 400;
 	padding-left: 1px;
@@ -1740,52 +1754,39 @@ textarea {
 	text-align: center;
 	vertical-align: bottom
 }
-.ee114 {
+.ee115 {
 	background: #EBF1DE;
 	color: #000;
 	font-family: Arial, sans-serif;
-	font-size: 10.00pt;
+	font-size: 18.00pt;
 	font-style: normal;
 	font-weight: 400;
 	padding-left: 0;
 	padding-right: 1px;
 	padding-top: 0;
-	text-align: center;
-	vertical-align: bottom
-}
-.ee116 {
-	background: #EBF1DE;
-	color: #000;
-	font-family: Arial, sans-serif;
-	font-size: 10.00pt;
-	font-style: normal;
-	font-weight: 400;
 	text-align: center;
 	vertical-align: bottom
 }
 .ee117 {
+	background: #EBF1DE;
+	color: #000;
+	font-family: Arial, sans-serif;
+	font-size: 18.00pt;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: bottom
+}
+.ee118 {
 	background: #fff;
 	color: #000;
 	font-family: Calibri, sans-serif;
-	font-size: 12.00pt;
+	font-size: 20.00pt;
 	font-style: normal;
 	font-weight: 400;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
-	text-align: center;
-	vertical-align: bottom
-}
-.ee119 {
-	background: #DCE6F1;
-	color: #000;
-	font-family: Arial, sans-serif;
-	font-size: 10.00pt;
-	font-style: normal;
-	font-weight: 400;
-	padding-left: 0;
-	padding-right: 1px;
-	padding-top: 0;
 	text-align: center;
 	vertical-align: bottom
 }
@@ -1793,17 +1794,7 @@ textarea {
 	background: #DCE6F1;
 	color: #000;
 	font-family: Arial, sans-serif;
-	font-size: 10.00pt;
-	font-style: normal;
-	font-weight: 400;
-	text-align: center;
-	vertical-align: bottom
-}
-.ee121 {
-	background: #FFC000;
-	color: #000;
-	font-family: Arial, sans-serif;
-	font-size: 10.00pt;
+	font-size: 18.00pt;
 	font-style: normal;
 	font-weight: 400;
 	padding-left: 0;
@@ -1812,11 +1803,34 @@ textarea {
 	text-align: center;
 	vertical-align: bottom
 }
+.ee121 {
+	background: #DCE6F1;
+	color: #000;
+	font-family: Arial, sans-serif;
+	font-size: 18.00pt;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: bottom
+}
 .ee122 {
 	background: #FFC000;
 	color: #000;
 	font-family: Arial, sans-serif;
-	font-size: 10.00pt;
+	font-size: 18.00pt;
+	font-style: normal;
+	font-weight: 400;
+	padding-left: 0;
+	padding-right: 1px;
+	padding-top: 0;
+	text-align: center;
+	vertical-align: bottom
+}
+.ee123 {
+	background: #FFC000;
+	color: #000;
+	font-family: Arial, sans-serif;
+	font-size: 18.00pt;
 	font-style: normal;
 	font-weight: 400;
 	text-align: center;
@@ -1824,4 +1838,42 @@ textarea {
 }
 textarea {
 	overflow: auto
+}
+#formc #tab img {
+	text-align: center;
+}
+img,
+embed,
+object,
+video {
+max-width: 100%;
+}#button button {
+	font-size: x-large;
+	font-weight: 700;
+	height: 2em;
+	width: auto;
+}
+
+.blocked {
+	display: inline-block;
+	padding:3px 7px;
+	color: white;
+	background-color:#d71818
+}
+
+.serviceIconGlobeLight {
+	background: url(../icons/servicesIcons/32/2/iconGlobeBg32.png) 0 0 no-repeat;
+}
+
+.serviceIcon {
+	height: 32px;
+	display: block;
+	padding-left: 44px;
+	line-height: 32px;
+	font-size: 14px;
+	margin-bottom: 18px;
+	color: #000;
+}
+	#button h4 {
+	padding: 0.75em;
 }

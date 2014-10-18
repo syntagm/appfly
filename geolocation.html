@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<HTML>
-<HEAD>
-<TITLE>HTML5 Geolocation API demo</TITLE> <style type="text/css">html{height:100%}body{font-family:sans-serif;background-color:#f5f5f5}#map-canvas{height:250px}</style> 
-</HEAD>
-<BODY>Click Show location button and run :)<center><input type="button" value=" Show Location " onclick="javascript:showlocation()"/></center><br/> Latitude: <span id="latitude">..</span><br>Longitude: <span id="longitude">..</span> <SCRIPT>function showlocation(){navigator.geolocation.watchPosition(callback);}
-function callback(position){document.getElementById('latitude').innerHTML=position.coords.latitude;document.getElementById('longitude').innerHTML=position.coords.longitude;}</SCRIPT>
-</BODY>
-</HTML>
