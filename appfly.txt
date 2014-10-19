@@ -1,0 +1,99 @@
+}
+img,
+embed,
+object,
+video {
+max-width: 100%;
+}#button button {
+	font-size: x-large;
+	font-weight: 700;
+	height: 2em;
+	width: auto;
+}
+
+.blocked {
+	display: inline-block;
+	padding:3px 7px;
+	color: white;
+	background-color:#d71818
+}
+
+.serviceIconGlobeLight {
+	background: url(../icons/servicesIcons/32/2/iconGlobeBg32.png) 0 0 no-repeat;
+}
+
+.serviceIcon {
+	height: 32px;
+	display: block;
+	padding-left: 44px;
+	line-height: 32px;
+	font-size: 14px;
+	margin-bottom: 18px;
+	color: #000;
+}
+	#button h4 {
+	padding: 0.75em;
+}
+
+***********************************
+
+            <div class='tlb-elm toolpanel'>
+                <button class='tlb-btn toolbarBluebtn update' >Update</button>
+                <button class='tlb-btn toolbarBluebtn reset' style='margin-left:3px'>Reset</button>
+                <button class='tlb-btn toolbarBluebtn print' style='margin-left:3px'>Print</button>
+                <button class='tlb-btn toolbarGreenbtn submit' style='margin-left:12px'>Submit</button></br></br></br></div>
+            
+</br></br></br>
+        </div>
+		<!-- Locator --------------------------------------->
+			<br>
+			<br>
+			<br>
+			<h4><strong class="blocked">Please note </strong> that the coordinates may be small on a mobile device</h4>			
+			<span class="serviceIcon serviceIconGlobeLight"><h4>Make a note of the coordinates</h4></span>			
+			<h4>and return to the input GRID to complete the entry</h4>
+			<br>			
+      		<p id="demo">Click this button to get your coordinates:</p>
+<button onclick="getLocation()">Click Here</button>
+<h3><script>
+var x=document.getElementById("demo");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+  else{x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+function showPosition(position)
+  {
+  x.innerHTML="Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;	
+  }
+</script></h3>
+			<br>
+			<hr>
+			<h4>Your coordinates are above this line</h4>
+			<h4><a href="flyloc/map.html">GoTo Mapped data</a></h4>
+			<hr>
+			<img src="assets/images/fruit-flies.png" width="311" height="180" />	<!-- Locator --------------------------------------------->
+		
+    </body>
+
+************************************
+
+ <form id='formc' name='formc' method='post' action='http://www.spreadsheetserver.com/server1/g/submit/submit.aspx' target='_top'>
+		    <input type='hidden' id='xl_spreadsheet' name='xl_spreadsheet' value='AppFly' />
+            <input type='hidden' id='xl_client' name='xl_client' value='x7.5.5933.0' />
+			<div id='tab'>
+			<center><img src="assets/images/appfly.png" width="450" height="150" /></center>
+<div id='sheet-1' style='padding: 1em 1.4em;'>
+		<table width= '100%' cellspacing='0' cellpadding='0' style='border-spacing:0;' onkeydown='javascript:navigate(event);'>
+					<col width='60%'/>
+					<col width='30%'/>
+					<col width='10%'/>
+                    <tr style='height:2em'>
+						<td class='ee100' style='height:2em;'>&nbsp;</td>
+						<td class='ee103' style='height:2em;'>&nbsp;</td>
+						<td class='ee106' style='height:2em;'>&nbsp;</td>
+                    </tr>
