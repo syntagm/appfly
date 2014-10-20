@@ -86,7 +86,8 @@ function showPosition(position)
 		    <input type='hidden' id='xl_spreadsheet' name='xl_spreadsheet' value='AppFly' />
             <input type='hidden' id='xl_client' name='xl_client' value='x7.5.5933.0' />
 			<div id='tab'>
-			<center><img src="assets/images/appfly.png" width="450" height="150" /></center>
+			
+
 <div id='sheet-1' style='padding: 1em 1.4em;'>
 		<table width= '100%' cellspacing='0' cellpadding='0' style='border-spacing:0;' onkeydown='javascript:navigate(event);'>
 					<col width='60%'/>
