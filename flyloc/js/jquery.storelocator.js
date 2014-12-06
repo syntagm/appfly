@@ -17,9 +17,9 @@ $.fn.storeLocator = function(options) {
       'zoomLevel': 12,
       'pinColor': 'fe7569',
       'pinTextColor': '000000',
-      'lengthUnit': 'm',
-      'storeLimit': 26,
-      'distanceAlert': 60,
+      'lengthUnit': 'km',
+      'storeLimit': -1,
+      'distanceAlert': -1,
       'dataType': 'xml',
       'dataLocation': 'locations.xml',
       'listColor1': 'ffffff',
@@ -675,7 +675,8 @@ $.fn.storeLocator = function(options) {
               for(var y = 0; y <= storenum; y++) { 
                 var letter = String.fromCharCode("A".charCodeAt(0) + y);
                 var point = new google.maps.LatLng(locationset[y]['lat'], locationset[y]['lng']);             
-                marker = createMarker(point, locationset[y]['name'], locationset[y]['address'], letter );
+                //old:marker = createMarker(point, locationset[y]['name'], locationset[y]['address'], letter );
+				marker = createMarker(point, locationset[y]['name'], locationset[y]['address'], letter, locationset[y]['category']);
                 marker.set("id", y);
                 markers[y] = marker;
                 if((settings.fullMapStart === true && firstRun === true) || settings.zoomLevel === 0){
@@ -734,10 +735,18 @@ $.fn.storeLocator = function(options) {
               $("#" + settings.listDiv + " ul li:odd").css('background', "#" + settings.listColor2);
                
               //Custom marker function - alphabetical
-              function createMarker(point, name, address, letter){
+              //old:function createMarker(point, name, address, letter){
+				  function createMarker(point, name, address, letter, category){
+					if(category === "amber"){
+					 var pinColorOverride = "6991fd";
+					}
+					else{
+						var pinColorOverride = "fe7569";
+					}
                 //Set up pin icon with the Google Charts API for all of our markers
-                var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=" + letter + "|" + settings.pinColor + "|" + settings.pinTextColor,
-                  new google.maps.Size(21, 34),
+                //old:var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=" + letter + "|" + settings.pinColor + "|" + settings.pinTextColor,
+                 var pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=" + letter + "|" + pinColorOverride + "|" + settings.pinTextColor,
+				  new google.maps.Size(21, 34),
                   new google.maps.Point(0,0),
                   new google.maps.Point(10, 34));
                 
